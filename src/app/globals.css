@@ -24,11 +24,11 @@
 
 
 h2 {
-  font-size: 30px
+  font-size: 36px
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
@@ -72,6 +72,22 @@ link {
   font-size: 16px
 }
 
+.rotate {
+  transition: all .5s ease-in-out;
+}
+
+.rotate:hover {
+  rotate: 12deg;
+}
+
+.bounce {
+  transition: all .3s ease-in-out;
+}
+
+.bounce:hover {
+  translate: 0px -10px
+}
+
 .header-title {
   font-size: 1.3rem;
 }
@@ -79,6 +95,10 @@ link {
 .price {
   font-weight: 500;
   font-size: 28px;
+}
+
+.light-overlay {
+  background-color: rgba(253, 231, 254, .6)
 }
 
 .hover-underline-animation {
