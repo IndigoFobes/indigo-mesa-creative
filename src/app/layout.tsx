@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth bg-[var(--light-bg)]">
       <body className="relative min-h-screen">
         <Header />
-        <main className="font-mono relative contentContainer">{children}</main>
+        <main className="relative contentContainer">{children}</main>
       </body>
     </html>
   );

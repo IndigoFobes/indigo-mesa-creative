@@ -56,19 +56,19 @@ export default function Header() {
 
   return (
     <motion.header
-      className="absolute top-0 right-0 header-bg hidden z-30 w-full md:flex md:flex-col justify-center bg-white border-b-[var(--dark-accent)] border-b-4"
+      className="absolute top-0 right-0 header-bg hidden z-30 w-full md:flex md:flex-col justify-center bg-white dark-border"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
       <div className="absolute flex justify-center top-0 w-screen text-center text-[var(--light-text-color)] pt-3 lg:pt-8 px-4 header-title">
-        <Link href="/" className="header-title link-no-dec">
+        <Link href="/" className="header-title link-no-dec dark-text">
           <h1>INDIGO MESA CREATIVE</h1>
         </Link>
       </div>
       {/* only visible on screens medium and larger */}
       <div className="menu-height flex w-screen place-items-end">
-        <ul className="hidden w-full font-[500] md:grid grid-cols-5 text-[var(--dark-theme)] text-center pb-4 text-sm md:text-md lg:text-lg">
+        <ul className="hidden w-full font-[500] md:grid grid-cols-5 dark-text text-center pb-4 text-sm md:text-md lg:text-lg">
           {menuItems.map((item) => {
             return (
               <Link

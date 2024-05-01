@@ -9,18 +9,59 @@
   --accent-one: #FAC0FF;
   --accent-two: #FDB600;
   --dark-accent: #1A145C;
+  --hover-one: #fbcfff;
+}
+
+.dark-text {
+  color: var(--dark-theme)
+}
+
+.dark-border {
+  border-bottom: var(--dark-accent);
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+}
+
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
 }
 
 link {
   text-decoration: none;
   }
 
+.button {
+  padding: 6px 20px 6px 20px;
+  background-color: var(--accent-one);
+  flex: flex;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--hover-one);
+  
+}
+
 .contentContainer {
 	min-height: calc(100vh - 88px)
 }
 
 .a-gradient {
-  background-image: linear-gradient(to bottom right, #FEF5FF, white, #DBECF8)
+  background-image: linear-gradient(to bottom right, #fde7fe, white, #bfdff5)
 }
 
 .menu-height {
@@ -33,6 +74,11 @@ link {
 
 .header-title {
   font-size: 1.3rem;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 28px;
 }
 
 .hover-underline-animation {
