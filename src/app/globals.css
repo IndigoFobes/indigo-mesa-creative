@@ -8,10 +8,58 @@
   --light-theme: #DBECF8;
   --accent-one: #FAC0FF;
   --accent-two: #FDB600;
+  --dark-accent: #1A145C;
+}
+
+link {
+  text-decoration: none;
+  }
+
+.contentContainer {
+	min-height: calc(100vh - 88px)
 }
 
 .a-gradient {
   background-image: linear-gradient(to bottom right, #FEF5FF, white, #DBECF8)
+}
+
+.menu-height {
+  height: 9rem;
+}
+
+.menu-item {
+  font-size: 16px
+}
+
+.header-title {
+  font-size: 1.3rem;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-one) ;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.verticalLine {
+  border-left: medium solid var(--dark-theme)
 }
 /* @media (prefers-color-scheme: dark) {
   :root {
